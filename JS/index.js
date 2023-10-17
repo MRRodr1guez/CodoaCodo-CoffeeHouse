@@ -19,5 +19,17 @@ async function handleSubmit(event){
     }
 }
 
+window.onscroll = function(){
+    if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+        document.getElementById("scrollToTopButton").style.display = "block";
+    }else{
+        document.getElementById("scrollToTopButton").style.display = "none";
+    }
+};
+
+document.getElementById("scrollToTopButton").addEventListener("click", function(){
+    document.documentElement.scrollTop = 0;
+})
+
 
 
