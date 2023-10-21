@@ -373,6 +373,46 @@ p {
     margin-bottom: 15px;
 }
 
+.titulo-animacion {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 2rem;
+}
+
+.slider-frame {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    margin-top:-10%;
+}
+
+.slider-frame ul {
+    display: flex;
+    padding: 0;
+    width: 100%; /* Ajusta el ancho al total de imágenes */
+    animation: slide 50s infinite linear;
+}
+
+.slider-frame li {
+    list-style: none;
+    width: 12.5%; /* Divide el ancho por el número de imágenes (100% / 8) */
+}
+
+.slider-frame img {
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-100%); /* Ajusta este valor al ancho total */
+    }
+}
+
+
 
 /* Estilos para tablet  */
 @media only screen and (max-width: 768px) {
