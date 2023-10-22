@@ -32,4 +32,9 @@ document.getElementById("scrollToTopButton").addEventListener("click", function(
 })
 
 
+const botonModoOscuro = document.getElementById("modo-oscuro");
+const body = document.body;
 
+botonModoOscuro.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+})

@@ -330,6 +330,8 @@ p {
 .blog {
     padding: 100px 0;
     text-align: center;
+    width: 150%;
+    
 }
 
 .blog-content {
@@ -410,6 +412,93 @@ p {
     100% {
         transform: translateX(-100%); /* Ajusta este valor al ancho total */
     }
+}
+
+/* Estilos generales para el fondo oscuro en el modo oscuro */
+#modo-oscuro {
+    position: relative;
+    background-color: #333; /* Color de fondo oscuro en modo normal */
+    color: #fff; /* Color del texto en modo normal */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#modo-oscuro:hover {
+    background-color: #222; /* Color de fondo oscuro al pasar el cursor */
+}
+
+
+
+body.dark-mode {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto claro */
+}
+
+/* Estilos para la sección "carta" en modo oscuro */
+body.dark-mode #carta {
+    background-color: #333; /* Cambia el fondo a un color oscuro en modo oscuro */
+    color: #fff; /* Cambia el color de todas las letras a blanco en modo oscuro */
+}
+
+/* Estilos para los elementos de texto dentro de "carta" en modo oscuro */
+body.dark-mode #carta h2, body.dark-mode #carta p, body.dark-mode #carta h3 {
+    color: #fff; /* Cambia el color de las letras a blanco en modo oscuro */
+}
+
+/* Modo Oscuro para la sección "Contacto" */
+body.dark-mode #Contacto {
+    background-color: #333; /* Cambia el fondo a un color oscuro en modo oscuro */
+    color: #fff; /* Cambia el color de todas las letras a blanco en modo oscuro */
+}
+
+/* Modo Oscuro para la sección "Nosotros" */
+body.dark-mode #Nosotros {
+    background-color: #333; /* Cambia el fondo a un color oscuro en modo oscuro */
+    color: #fff; /* Cambia el color de todas las letras a blanco en modo oscuro */
+}
+
+/* Modo Oscuro para los títulos "Contacto" y "Nosotros" */
+body.dark-mode #Contacto h2, body.dark-mode #Nosotros h2 {
+    background-color: #222; /* Cambia el fondo de los títulos a un color oscuro en modo oscuro */
+    color: #fff; /* Cambia el color del texto de los títulos a blanco en modo oscuro */
+}
+
+/* Modo Oscuro para los elementos de texto dentro de "Contacto" y "Nosotros" */
+body.dark-mode #Contacto p, body.dark-mode #Nosotros p {
+    color: #fff; /* Cambia el color de las letras a blanco en modo oscuro */
+}
+
+/* Modo Oscuro para los campos de entrada de formulario en "Contacto" */
+body.dark-mode #Contacto input[type="text"],
+body.dark-mode #Contacto input[type="email"],
+body.dark-mode #Contacto input[type="number"],
+body.dark-mode #Contacto textarea {
+    background-color: #444; /* Cambia el fondo de los campos de entrada a un color más oscuro en modo oscuro */
+}
+
+/* Modo Oscuro para la sección de la clase general-1 */
+body.dark-mode .general-1 {
+    background-color: #333; /* Cambia el fondo a un color oscuro en modo oscuro */
+    color: #fff; /* Cambia el color de todas las letras a blanco en modo oscuro */
+}
+
+/* Modo Oscuro para la sección "Blog" */
+body.dark-mode #Blog {
+    background-color: #222; /* Cambia el fondo a un color oscuro en modo oscuro */
+    color: #fff; /* Cambia el color del texto a blanco en modo oscuro */
+}
+
+/* Modo Oscuro para los títulos y párrafos dentro de "Blog" en modo oscuro */
+body.dark-mode #Blog h2, body.dark-mode #Blog p {
+    color: #fff; /* Cambia el color del texto a blanco en modo oscuro */
+}
+
+/* Modo Oscuro para las imágenes de las entradas del Blog */
+body.dark-mode .blog-1 img {
+    border: 2px solid #fff; /* Agrega un borde blanco a las imágenes */
 }
 
 
